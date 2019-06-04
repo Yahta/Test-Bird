@@ -52,27 +52,18 @@ public class Background {
             // (_25_) теперь в методе рендер отрисовываем не одну картинку, а две
             // с помощью цикла фор
             batch.draw(backs[i].tx, backs[i].pos.x, backs[i].pos.y); // (_26_) для каждого элемента
-        // batch.draw(tx, pos.x, pos.y); //  собираем в методе батч // (_27) удаляем за ненадобностью
-        // (_7_) возвращаемся в Java Class MyGdxGame  и добавляем метод update
-    }
+            // batch.draw(tx, pos.x, pos.y); //  собираем в методе батч // (_27) удаляем за ненадобностью
+            // (_7_) возвращаемся в Java Class MyGdxGame  и добавляем метод update
+        }
 
-        public void update() {
-            for (int i = 0; i < backs.length; i++) {
-                backs[i].pos.x -= speed;
+       // public void update() {
+           // for (int i = 0; i < backs.length; i++) {
+             //   backs[i].pos.x -= speed;
             }
         }
 
-            if(backs[0].pos.x < -800) {
-                backs[0].pos.x = 0;
-                backs[1].pos.x = 800;
-            }
-
-
-            // public void update(){ // (_12_) фон будет съезжать
-        // pos.x -= speed; // (_28_) удаляем за ненадобностью
-        //
-        //if (pos.x < -800){ // (_19_) если позиция картинки становится равна оси y
-           //  pos.x = 0;
-
-
-// (_29_)создаем новый Java Class Bird
+        // if (backs[0].pos.x < -800) {
+            //backs[0].pos.x = 0;
+           //  backs[1].pos.x = 800;
+     //   }
+   // }
